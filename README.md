@@ -6,9 +6,9 @@ __Problem:__ We were given the task of finding the shortest route visiting all t
 
 ##Overview
 Any genetic algorithm (GA) is made up of the following components and my approach to the TSP using a GA is no different:
-1. Selection
-2. Reproduction (genetic crossover)
-3. Mutation
+ 1. Selection
+ 2. Reproduction (genetic crossover)
+ 3. Mutation
 
 In my code each gene is represented as a `Town` object and each `Path` object is a collection of 80 `Town`s. The fitness of each `Path` is evaluated according to it's `distance` : the shorter the route around the 80 `Town`s the better (or "fitter"). Each `Population` is made up of a number of `Path`s (the higher the number the less generations the GA will take but the slower the running time will be - this is a trade-off). At each generation, the `Population` is repopulated with the fittest `Path`s having a higher probability of being selected for reproduction. To keep the mating pool from becoming stagnant, a mutation (which may or may not improve the `Path` fitness) is applied at random to the offspring ("crossed-over") `Path` of the chosen parents. This child `Path` is then a member of the `Population` for the next generation.
 
