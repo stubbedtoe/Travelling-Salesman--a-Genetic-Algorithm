@@ -34,7 +34,7 @@ __keep repeating steps 2-4 until no improvement has been found for the given num
 
 * I did not write `FileIO.java`. This class was given to all students for repeated use in the module.
 * Routes produced by this program can be verified online using [my](https://github.com/stubbedtoe/tsp_checker) Google Maps-based [TSP route checker](http://www.andrewhealy.com/tsp_checker/verifier.html)
-* This algorithm managed to find the 3rd best route for the given collection of towns. The winning route used a Branch and Bound algorithm. Even though this algorithm 
+* This algorithm managed to find the 3rd best route for the given collection of towns. The winning route used a Branch and Bound algorithm. Even though this algorithm did not find the shortest route, I thoroughly enjoyed simulating this natural phenomenon in code. 
 
 
 
